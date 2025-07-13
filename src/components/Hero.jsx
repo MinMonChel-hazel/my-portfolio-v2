@@ -21,18 +21,18 @@ export default function Hero() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit accusantium facere voluptatem consectetur.
         </p>
         <div className='flex items-center space-x-4 mb-6'>
-          <a href='#'>
+          <a href='https://github.com/MinMonChel-hazel'>
             <img src={github} alt='github' className='w-9 md:w-11 h-9 md:h-11 transition' />
           </a>
-          <a href='#'>
+          <a href='https://www.linkedin.com/in/minmonchel/'>
             <img src={linkedin} alt='l' className='w-9 md:w-11 h-9 md:h-11 transition' />
           </a>
-          <a href='#'>
+          {/* <a href='#'>
             <img src={facebook} alt='Facebook' className='w-9 md:w-11 h-9 md:h-11 transition' />
           </a>
           <a href='#'>
             <img src={instagram} alt='Instagram' className='w-9 md:w-11 h-9 md:h-11 transition' />
-          </a>
+          </a> */}
         </div>
         <a href={Adam} download>
           <button className='inline-flex text-white border-2 py-2 px-6 bg-gradient transition rounded-full text-base lg:text-lg'>Download Resume</button>
