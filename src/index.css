@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient {
+    @apply bg-gradient-to-r from-pink-400 to-blue-500;
+}
+
+.transition {
+    @apply transform transition-transform duration-300 hover:scale-105;
+}
