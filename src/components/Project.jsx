@@ -8,7 +8,7 @@ import P6Img from '../assets/Project6.png';
 
 const ProjectCard = ({image, title, description, link}) => {
     return (
-        <article className='relative h-80 bg-gray-800 rounded overflow-hidden shadow-lg group'>
+        <article className='relative h-84 md:h-80 bg-gray-800 rounded overflow-hidden shadow-lg group'>
             <div className='relative z-10'>
                 <figure className='relative'>
                     <img src={image} alt={title} className='w-full h-48 px-5 pt-5 object-cover transition-transform duration-300 group-hover:scale-110' />
@@ -63,7 +63,7 @@ let ProjectsList = [
         {
             image: P6Img,
             title: 'Counter App (CSS & JS)',
-            description: 'Lightweight React counter demonstrating useState for increment/decrement logic.',
+            description: 'Simple counter app built using pure HTML, CSS, and JavaScript without any frameworks.',
             link: 'https://github.com/MinMonChel-hazel/Counter-Project'
         }
     ]
@@ -74,7 +74,7 @@ export default function Project() {
     <section id='projects' className='container mx-auto text-white pb-20'>
         <div className='mb-6 md:mb-10' data-aos='fade-up' data-aos-delay='300'>
             <h2 className='text-center text-2xl md:text-3xl font-bold md:mb-6 mb-3'>My <span className='text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500'>Projects</span></h2>
-            <p className='text-sm md:text-base lg:text-xl text-center xl:px-40 lg:px-24 md:px-18 px-10'>Here are some of the web projects I've built using React, Tailwind CSS and modern frontend tools.</p>
+            <p className='text-base md:text-lg lg:text-xl text-center xl:px-40 lg:px-24 md:px-18 px-10'>Here are some of the web projects I've built using React, Tailwind CSS and modern frontend tools.</p>
         </div>
         <div data-aos='fade-up' data-aos-delay='500' className='relative grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:px-6 px-4 gap-6 items-center justify-center md:mt-10 mt-5 text-white box-border'>
             {ProjectsList.map((project, index) => (

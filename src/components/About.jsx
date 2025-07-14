@@ -9,7 +9,7 @@ export default function About() {
         <div className='flex flex-col md:flex-row gap-6 md:gap-6 lg:gap-14 items-center'>
             <img src={AboutMeImg} alt='About Me Image' className='w-[200px] h-[250px] rounded-lg object-cover' />
             <div>
-                <p className=' text-sm md:text-base lg:text-xl text-center md:text-left'>I'm a frontend developer passionate about building clean, user‑friendly web apps with React, Tailwind CSS, and Firebase. With a background in NGO operations and hands‑on project support, I bring both technical and cooperative skills to create meaningful online experiences.</p>
+                <p className='text-base md:text-lg lg:text-xl text-center md:text-left'>I'm a frontend developer passionate about building clean, user‑friendly web apps with tools like React, Tailwind CSS, and Firebase for modern frontend development.</p>
                 <div className='space-y-2 my-4'>
                     <div className='flex items-center gap-4'>
                         <label htmlFor='htmlandcss' className='basis-[30%] md:basis-[20%] text-base lg:text-xl'>HTML & CSS</label>

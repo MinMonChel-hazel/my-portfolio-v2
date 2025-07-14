@@ -43,9 +43,9 @@ export default function Navbar() {
                 <a href={link.link} className='' key={link.id}>{link.name}</a>
             ))}
             {/* contact button */}
-            <button className='inline-flex text-white border-2 px-6 py-2 rounded-full transition'>
-                Contact
-            </button>
+            <a href='#contact'>
+                <button className='inline-flex text-white border-2 px-6 py-2 rounded-full transition'>Contact</button>
+            </a>
         </div>
 
     </header>
