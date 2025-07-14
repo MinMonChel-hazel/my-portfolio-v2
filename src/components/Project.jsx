@@ -8,7 +8,7 @@ import P6Img from '../assets/Project6.png';
 
 const ProjectCard = ({image, title, description, link}) => {
     return (
-        <article className='relative h-84 md:h-80 bg-gray-800 rounded overflow-hidden shadow-lg group'>
+        <article className='relative h-80 bg-gray-800 rounded overflow-hidden shadow-lg group'>
             <div className='relative z-10'>
                 <figure className='relative'>
                     <img src={image} alt={title} className='w-full h-48 px-5 pt-5 object-cover transition-transform duration-300 group-hover:scale-110' />
@@ -18,7 +18,7 @@ const ProjectCard = ({image, title, description, link}) => {
                         </button>
                     </a>
                 </figure>
-                <div className='px-6 py-4 text-center'>
+                <div className='xl:px-5 px-3 xl:py-4 py-2 text-center'>
                     <header>
                         <h3 className='text-white font-bold text-lg'>{title}</h3>
                     </header>

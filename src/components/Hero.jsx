@@ -37,7 +37,7 @@ export default function Hero() {
         {/* <a href={Hazel} download>
           <button className='inline-flex text-white border-2 py-2 px-6 bg-gradient transition rounded-full text-base lg:text-lg'>Download Resume</button>
         </a> */}
-        <a href={Hazel} className="cta-button bg-gradient rounded-full">Download Resume</a>
+        <a href={Hazel} className="cta-button bg-gradient lg:text-lg text-base rounded-full">Download Resume</a>
       </div>
     )
 }

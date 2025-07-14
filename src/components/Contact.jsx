@@ -28,7 +28,7 @@ export default function Contact() {
                 <form action="https://getform.io/f/bjjownvb" method="POST" class="shadow-md rounded lg:pl-20 pl-12 md:pr-0 pr-6 pb-10 space-y-5">
                     <div class="space-y-2">
                         <label htmlFor="username">
-                            Username
+                            Name
                         </label>
                         <input type="text" name='name' required className="rounded w-full py-2 px-3 bg-gray-800 border border-gray-600 leading-tight focus:outline-none focus:transition-all focus:border-pink-400" id="username" placeholder="Username" />
                     </div>
