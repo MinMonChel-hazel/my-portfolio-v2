@@ -33,7 +33,7 @@ export default function Navbar() {
         href="#home"
         className="text-3xl lg:text-4xl font-bold italic text-white whitespace-nowrap"
         >
-        <span className="text-transparent bg-clip-text bg-gradient-to-b from-pink-400 to-blue-500 text-4xl sm:text-5xl md:text-6xl">
+        <span className="text-transparent bg-clip-text bg-gradient-to-b from-pink-400 to-blue-500 text-4xl">
             P
         </span>
         ortfolio
