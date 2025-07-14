@@ -17,8 +17,9 @@ export default function Hero() {
           </span>
           , Frontend Developer
         </h1>
-        <p className='text-base lg:text-lg text-center text-gray-300 mb-6'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit accusantium facere voluptatem consectetur.
+        <p className='text-base lg:text-lg text-center text-gray-300 mb-6 xl:px-72 lg:px-36 md:px-20 px-8'>
+          As a Frontend Developer, I enjoy crafting modern web interfaces that are responsive and user-friendly. 
+          I'm Min Mon Chel, and I focus on React and Tailwind CSS to bring ideas to life.
         </p>
         <div className='flex items-center space-x-4 mb-6'>
           <a href='https://github.com/MinMonChel-hazel'>
