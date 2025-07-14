@@ -17,7 +17,7 @@ export default function Navbar() {
       data-aos="fade-up"
       data-aos-delay="300"
     >
-      <div className="container mx-auto flex items-center justify-between px-5 py-4">
+      {/* <div className="container mx-auto flex items-center justify-between px-5 py-4"> */}
         {/* Logo */}
         {/* <a
           href="#home"
@@ -29,79 +29,80 @@ export default function Navbar() {
           ortfolio
         </a> */}
 
-        <a
-        href="#home"
-        className="text-3xl lg:text-4xl font-bold italic text-white whitespace-nowrap"
-        >
-        <span className="text-transparent bg-clip-text bg-gradient-to-b from-pink-400 to-blue-500 text-4xl">
-            P
-        </span>
-        ortfolio
-        </a>
-
-        {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden text-white"
-          onClick={() => setIsOpen(true)}
-          aria-label="Open menu"
-        >
-          <FiMenu className="w-8 h-8" />
-        </button>
-
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-8">
-          {NavBarLinks.map((link) => (
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between py-4">
             <a
-              href={link.link}
-              key={link.id}
-              className="text-lg text-white hover:text-pink-400 transition duration-300"
+                href="#home"
+                className="text-3xl sm:text-4xl lg:text-5xl font-bold italic text-white whitespace-nowrap"
             >
-              {link.name}
+                <span className="text-transparent bg-clip-text bg-gradient-to-b from-pink-400 to-blue-500 text-4xl md:text-5xl lg:text-6xl">
+                P
+                </span>
+                ortfolio
             </a>
-          ))}
-          <a href="#contact">
-            <button className="bg-gradient-to-r from-pink-400 to-blue-500 hover:from-pink-500 hover:to-blue-600 text-white px-5 py-2 rounded-full text-lg font-medium transition duration-300">
-              Contact
+
+            {/* Mobile Menu Toggle */}
+            <button
+            className="md:hidden text-white"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open menu"
+            >
+            <FiMenu className="w-8 h-8" />
             </button>
-          </a>
-        </nav>
-      </div>
 
-      {/* Mobile Navigation */}
-      <div
-        className={`fixed top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-900 transform transition-all duration-300 ease-in-out ${
-          isOpen
-            ? 'scale-100 opacity-100'
-            : 'scale-95 opacity-0 pointer-events-none'
-        } flex flex-col items-center justify-center space-y-8`}
-      >
-        {/* Close Button */}
-        <button
-          className="absolute top-5 right-5 text-white"
-          onClick={() => setIsOpen(false)}
-          aria-label="Close menu"
+            {/* Desktop Nav */}
+            <nav className="hidden md:flex items-center space-x-8">
+            {NavBarLinks.map((link) => (
+                <a
+                href={link.link}
+                key={link.id}
+                className="text-lg text-white hover:text-pink-400 transition duration-300"
+                >
+                {link.name}
+                </a>
+            ))}
+            <a href="#contact">
+                <button className="bg-gradient-to-r from-pink-400 to-blue-500 hover:from-pink-500 hover:to-blue-600 text-white px-5 py-2 rounded-full text-lg font-medium transition duration-300">
+                Contact
+                </button>
+            </a>
+            </nav>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div
+            className={`fixed top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-900 transform transition-all duration-300 ease-in-out ${
+            isOpen
+                ? 'scale-100 opacity-100'
+                : 'scale-95 opacity-0 pointer-events-none'
+            } flex flex-col items-center justify-center space-y-8`}
         >
-          <FiX className="w-8 h-8" />
-        </button>
-
-        {/* Mobile Links */}
-        {NavBarLinks.map((link) => (
-          <a
-            key={link.id}
-            href={link.link}
+            {/* Close Button */}
+            <button
+            className="absolute top-5 right-5 text-white"
             onClick={() => setIsOpen(false)}
-            className="text-2xl text-white hover:text-pink-400 transition"
-          >
-            {link.name}
-          </a>
-        ))}
+            aria-label="Close menu"
+            >
+            <FiX className="w-8 h-8" />
+            </button>
 
-        <a href="#contact" onClick={() => setIsOpen(false)}>
-          <button className="bg-gradient-to-r from-pink-400 to-blue-500 hover:from-pink-500 hover:to-blue-600 text-white px-6 py-2 rounded-full text-lg font-medium transition duration-300">
-            Contact
-          </button>
-        </a>
-      </div>
+            {/* Mobile Links */}
+            {NavBarLinks.map((link) => (
+            <a
+                key={link.id}
+                href={link.link}
+                onClick={() => setIsOpen(false)}
+                className="text-2xl text-white hover:text-pink-400 transition"
+            >
+                {link.name}
+            </a>
+            ))}
+
+            <a href="#contact" onClick={() => setIsOpen(false)}>
+            <button className="bg-gradient-to-r from-pink-400 to-blue-500 hover:from-pink-500 hover:to-blue-600 text-white px-6 py-2 rounded-full text-lg font-medium transition duration-300">
+                Contact
+            </button>
+            </a>
+        </div>
     </header>
   );
 }
