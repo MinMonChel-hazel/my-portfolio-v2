@@ -21,7 +21,7 @@ export default function Contact() {
                 </div>
                 <div>
                     <FiMapPin className='text-pink-300 w-16 h-6 inline-block' />
-                    <span>Greenspace Apartment, Chatuchack, Bangkok</span>
+                    <span>Chatuchack, Bangkok, Thailand</span>
                 </div>
             </div>
             <div className='mt-10 md:mt-0' data-aos='fade-left' data-aos-delay='300'>

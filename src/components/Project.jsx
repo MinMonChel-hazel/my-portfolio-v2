@@ -11,7 +11,7 @@ const ProjectCard = ({image, title, description, link}) => {
         <article className='relative h-80 bg-gray-800 rounded overflow-hidden shadow-lg group'>
             <div className='relative z-10'>
                 <figure className='relative'>
-                    <img src={image} alt={title} className='w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110' />
+                    <img src={image} alt={title} className='w-full h-48 px-5 pt-5 object-cover transition-transform duration-300 group-hover:scale-110' />
                     <a href={link} target='_blank' className='absolute h-[202px] inset-0 flex items-center justify-center bg-purple-300 bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300' >
                         <button className='bg-white font-medium text-black py-2 px-4 rounded-3xl shadow hover:text-white hover:bg-gradient-to-r hover:from-pink-400 hover:to-blue-500'>
                             GitHub
@@ -40,7 +40,7 @@ let ProjectsList = [
             image: P2Img,
             title: 'Todo Tracker (React + localStorage)',
             description: 'A clean and intuitive Todo app, using React Hooks and localStorage to persist tasks.',
-            link: 'https://github.com/MinMonChel-hazel/Todo-List'
+            link: 'https://github.com/MinMonChel-hazel/React-Todo-App'
         },
         {
             image: P3Img,

@@ -3,8 +3,8 @@ import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 import facebook from '../assets/facebook.png';
 import instagram from '../assets/instagram.png';
-import Adam from '../assets/Adam.pdf';
-import ProfileImg from '../assets/MMCImg2.jpg'
+import ProfileImg from '../assets/MMCImg2.jpg';
+import Hazel from '../assets/MinMonChel_Resume.pdf';
 
 export default function Hero() {
     return (
@@ -34,7 +34,7 @@ export default function Hero() {
             <img src={instagram} alt='Instagram' className='w-9 md:w-11 h-9 md:h-11 transition' />
           </a> */}
         </div>
-        <a href={Adam} download>
+        <a href={Hazel} download>
           <button className='inline-flex text-white border-2 py-2 px-6 bg-gradient transition rounded-full text-base lg:text-lg'>Download Resume</button>
         </a>
       </div>
