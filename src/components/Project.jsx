@@ -72,7 +72,10 @@ export default function Project() {
     
   return (
     <section id='projects' className='container mx-auto text-white pb-20'>
-        <h2 className='text-center text-2xl md:text-3xl font-bold mb-6 md:mb-10' data-aos='fade-up' data-aos-delay='300'>My <span className='text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500'>Projects</span></h2>
+        <div className='mb-6 md:mb-10' data-aos='fade-up' data-aos-delay='300'>
+            <h2 className='text-center text-2xl md:text-3xl font-bold md:mb-6 mb-3'>My <span className='text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500'>Projects</span></h2>
+            <p className='text-sm md:text-base lg:text-xl text-center xl:px-40 lg:px-24 md:px-18 px-10'>Here are some of the web projects I've built using React, Tailwind CSS and modern frontend tools.</p>
+        </div>
         <div data-aos='fade-up' data-aos-delay='500' className='relative grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:px-6 px-4 gap-6 items-center justify-center md:mt-10 mt-5 text-white box-border'>
             {ProjectsList.map((project, index) => (
                 <ProjectCard key={index} image={project.image} title={project.title} description={project.description} link={project.link} />

@@ -22,11 +22,11 @@ export default function Hero() {
           I'm Min Mon Chel, and I focus on React and Tailwind CSS to bring ideas to life.
         </p>
         <div className='flex items-center space-x-4 mb-6'>
-          <a href='https://github.com/MinMonChel-hazel'>
-            <img src={github} alt='github' className='w-9 md:w-11 h-9 md:h-11 transition' />
+          <a href='https://github.com/MinMonChel-hazel' target="_blank" className="icon-link">
+            <img src={github} alt="GitHub" className='w-9 md:w-11 h-9 md:h-11' />
           </a>
-          <a href='https://www.linkedin.com/in/minmonchel/'>
-            <img src={linkedin} alt='l' className='w-9 md:w-11 h-9 md:h-11 transition' />
+          <a href='https://www.linkedin.com/in/minmonchel/' target="_blank" className="icon-link">
+            <img src={linkedin} alt='Linkedin' className='w-9 md:w-11 h-9 md:h-11' />
           </a>
           {/* <a href='#'>
             <img src={facebook} alt='Facebook' className='w-9 md:w-11 h-9 md:h-11 transition' />
@@ -35,9 +35,10 @@ export default function Hero() {
             <img src={instagram} alt='Instagram' className='w-9 md:w-11 h-9 md:h-11 transition' />
           </a> */}
         </div>
-        <a href={Hazel} download>
+        {/* <a href={Hazel} download>
           <button className='inline-flex text-white border-2 py-2 px-6 bg-gradient transition rounded-full text-base lg:text-lg'>Download Resume</button>
-        </a>
+        </a> */}
+        <a href={Hazel} className="cta-button bg-gradient rounded-full">Download Resume</a>
       </div>
     )
 }

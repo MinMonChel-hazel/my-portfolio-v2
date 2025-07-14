@@ -9,3 +9,30 @@
 .transition {
     @apply transform transition-transform duration-300 hover:scale-105;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.icon-link img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon-link:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
