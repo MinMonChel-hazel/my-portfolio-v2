@@ -19,7 +19,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between px-5 py-4">
         {/* Logo */}
-        <a
+        {/* <a
           href="#home"
           className="text-3xl lg:text-4xl font-bold italic text-white"
         >
@@ -27,6 +27,16 @@ export default function Navbar() {
             P
           </span>
           ortfolio
+        </a> */}
+
+        <a
+        href="#home"
+        className="text-3xl lg:text-4xl font-bold italic text-white whitespace-nowrap"
+        >
+        <span className="text-transparent bg-clip-text bg-gradient-to-b from-pink-400 to-blue-500 text-4xl sm:text-5xl md:text-6xl">
+            P
+        </span>
+        ortfolio
         </a>
 
         {/* Mobile Menu Toggle */}
