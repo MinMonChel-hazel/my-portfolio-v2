@@ -18,7 +18,7 @@ function App() {
 
   return ( 
 
-    <main className='bg-gray-950 overflow-y-hidden'>
+    <main className='bg-gray-950 overflow-y-hidden' id='home'>
       <Navbar />
       <Hero />
       <About />
