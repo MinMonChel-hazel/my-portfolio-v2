@@ -46,7 +46,7 @@ export default function Skills() {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        <h2 className="lg:text-3xl md:text-2xl text-2xl font-bold text-center mb-3 uppercase">
+        <h2 className="lg:text-3xl md:text-2xl text-2xl font-bold text-center mb-3 uppercase shadow-2xl">
           My Experise <br /> and <span className="text-themeColor">Skills</span>
         </h2>
         <p className="lg:text-lg md:text-base text-[14px] text-center xl:px-40 lg:px-24 md:px-18 px-10">

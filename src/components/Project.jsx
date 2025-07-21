@@ -89,7 +89,7 @@ export default function Project() {
     <section id="projects" className="bg-[#121B42] lg:pt-14 pt-10 px-8 lg:px-0">
       <div className="container mx-auto text-white pb-20">
         <div className="mb-6 md:mb-10" data-aos="fade-up" data-aos-delay="300">
-          <h2 className="text-center text-2xl lg:text-3xl font-bold mb-3 uppercase">
+          <h2 className="text-center text-2xl lg:text-3xl shadow-2xl font-bold mb-3 uppercase">
             My <span className="text-themeColor">Projects</span>
           </h2>
           <p className="lg:text-lg md:text-base text-[14px] text-center xl:px-40 lg:px-24 md:px-18 px-6">

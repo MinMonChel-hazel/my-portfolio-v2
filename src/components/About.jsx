@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMeImg from "../assets/AboutMe.jpg";
+import { FaUserGraduate } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -10,10 +11,17 @@ export default function About() {
         data-aos-delay="300"
       >
         <div>
-          <h2 className="text-center md:text-left text-2xl font-semibold mb-4 md:mb-6 uppercase">
+          <h2 className="text-center md:text-left text-2xl font-semibold mb-2 md:mb-3 uppercase shadow-2xl">
             About Me
           </h2>
-          <div className="flex flex-col md:flex-row gap-6 md:gap-6 lg:gap-14 items-center">
+          <div className="flex gap-3 items-center justify-center md:justify-start">
+            <FaUserGraduate size={28} className="text-themeColor" />
+            <div className="text-[15px] lg:text-base">
+              <p className="shadow-2xl">Bachelor of Computer Science</p>
+              <p className="shadow-2xl">B.C.SC</p>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-6 lg:gap-14 items-center mt-3">
             <img
               src={AboutMeImg}
               alt="About Me Image"
@@ -46,9 +54,14 @@ export default function About() {
                   values both design and code, feel free to get in touch!
                 </p>
               </div>
-              <div>
+              <div className="flex gap-3">
+                <a href="https://drive.google.com/file/d/1fZd1pjIZy1903FgwQvJXz9Mb0q0TDthB/view?usp=sharing">
+                  <button className="border border-themeColor text-white px-4 py-1.5 rounded-lg text-[14px] lg:text-base font-medium transition duration-300 uppercase shadow-2xl">
+                    View Certificate
+                  </button>
+                </a>
                 <a href="#contact">
-                  <button className="bg-themeColor text-black px-4 py-1.5 rounded-lg text-[14px] lg:text-base font-medium transition duration-300 uppercase">
+                  <button className="bg-themeColor text-[#121B42] px-4 py-1.5 rounded-lg text-[14px] lg:text-base font-medium transition duration-300 uppercase shadow-2xl">
                     Hire Me
                   </button>
                 </a>

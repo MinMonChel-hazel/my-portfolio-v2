@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section id="contact" className="container mx-auto text-white px-12 pt-12">
       <h2
-        className="text-2xl lg:text-3xl uppercase font-semibold mb:4 lg:mb-6"
+        className="text-2xl lg:text-3xl shadow-2xl uppercase font-semibold mb:4 lg:mb-6"
         data-aos="fade-up"
         data-aos-delay="300"
       >

@@ -23,7 +23,7 @@ export default function Hero() {
       data-aos-delay="300"
       className="relative overflow-hidden flex flex-col items-center mt-2 md:mt-0 mb-4 lg:mb-0"
     >
-      <div className="lg:block hidden lg:h-[350px] xl:h-[450px] xl:w-[480px] lg:w-[380px] absolute bg-themeColor transform rotate-45 z-0 xl:right-12 right-0 top-36 rounded-3xl"></div>
+      <div className="lg:block hidden lg:h-[350px] xl:h-[450px] xl:w-[480px] lg:w-[380px] absolute bg-themeColor transform rotate-45 z-0 xl:right-12 right-2 top-36 rounded-3xl"></div>
 
       <section className="container mx-auto min-h-screen flex md:flex-row flex-col items-center justify-center px-12">
         <div className="flex flex-col md:flex-row items-center justify-between w-full mt-14">
