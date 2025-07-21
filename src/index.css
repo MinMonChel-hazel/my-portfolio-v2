@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-gradient {
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+/* .bg-gradient {
     @apply bg-gradient-to-r from-pink-400 to-blue-500;
+} */
+
+.bg-dark {
+  background-color: #050922;
 }
 
 .transition {
@@ -14,17 +24,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.typed-text-shadow {
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4), 
+               0 0 8px rgba(255, 255, 255, 0.3);
+}
+
 .cta-button {
   display: inline-block;
-  padding: 10px 20px;
-  color: white;
+  padding: 6px 12px;
   text-decoration: none;
   transition: all 0.3s ease;
+  border: 2px solid #01b2f6;
+  color: #fff;
+  box-shadow: 0 10px 10px -8px rgba(0 0 0 / 78%);
 }
 
 .cta-button:hover {
   transform: scale(1.05);
-  background-color: #0056b3;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 

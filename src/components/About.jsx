@@ -1,44 +1,62 @@
-import React from 'react'
-import AboutMeImg from '../assets/AboutMe.jpg';
+import React from "react";
+import AboutMeImg from "../assets/AboutMe.jpg";
 
 export default function About() {
   return (
-    <div id='about' className='text-white container mx-auto mt-10 xl:px-50 lg:px-20 px-10 pb-20' data-aos='fade-right' data-aos-delay='300'>
-      <div>
-        <h2 className='text-center text-2xl md:text-3xl font-bold mb-6 md:mb-10'>About Me</h2>
-        <div className='flex flex-col md:flex-row gap-6 md:gap-6 lg:gap-14 items-center'>
-            <img src={AboutMeImg} alt='About Me Image' className='w-[200px] h-[250px] rounded-lg object-cover' />
-            <div>
-                <p className='text-base md:text-lg lg:text-xl text-center md:text-left'>I'm a frontend developer passionate about building clean, user‑friendly web apps with tools like React, Tailwind CSS, and Firebase for modern frontend development.</p>
-                <div className='space-y-2 my-4'>
-                    <div className='flex items-center gap-4'>
-                        <label htmlFor='htmlandcss' className='basis-[30%] md:basis-[20%] text-base lg:text-xl'>HTML & CSS</label>
-                        <div className='bg-gray-800 rounded-full h-2 lg:h-2.5 grow'>
-                            <div className='bg-gradient transition w-10/12 h-2 lg:h-2.5 rounded-full'></div>
-                        </div>
-                    </div>
-                    <div className='flex items-center gap-4'>
-                        <label htmlFor='javascript' className='basis-[30%] md:basis-[20%] text-base lg:text-xl'>Javascript</label>
-                        <div className='bg-gray-800 rounded-full h-2 lg:h-2.5 grow'>
-                            <div className='bg-gradient transition w-8/12 h-2 lg:h-2.5 rounded-full'></div>
-                        </div>
-                    </div>
-                    <div className='flex items-center gap-4'>
-                        <label htmlFor='tailwind css' className='basis-[30%] md:basis-[20%] text-base lg:text-xl'>Tailwind CSS</label>
-                        <div className='bg-gray-800 rounded-full h-2 lg:h-2.5 grow'>
-                            <div className='bg-gradient transition w-9/12 h-2 lg:h-2.5 rounded-full'></div>
-                        </div>
-                    </div>
-                    <div className='flex items-center gap-4'>
-                        <label htmlFor='react js' className='basis-[30%] md:basis-[20%] text-base lg:text-xl'>React JS</label>
-                        <div className='bg-gray-800 rounded-full h-2 lg:h-2.5 grow'>
-                            <div className='bg-gradient transition w-10/12 h-2 lg:h-2.5 rounded-full'></div>
-                        </div>
-                    </div>
-                </div>
+    <section id="about" className="bg-[#121B42]">
+      <div
+        className="text-white container mx-auto pt-10 md:pb-20 pb-10 px-12"
+        data-aos="fade-right"
+        data-aos-delay="300"
+      >
+        <div>
+          <h2 className="text-center md:text-left text-2xl font-semibold mb-4 md:mb-6 uppercase">
+            About Me
+          </h2>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-6 lg:gap-14 items-center">
+            <img
+              src={AboutMeImg}
+              alt="About Me Image"
+              className="xl:w-[250px] w-[280px] xl:h-[300px] h-[330px] rounded-lg object-cover"
+            />
+            <div className="flex flex-col xl:gap-6 gap-4 text-[16px]">
+              <div className="flex flex-col xl:gap-2 gap-1 text-justify md:text-left lg:text-[15px] text-[12px]">
+                <p>
+                  Hello, I am Min Mon Chel, a frontend developer with a strong
+                  focus on React.js and Tailwind CSS. I’m currently enhancing my
+                  skills in Next.js, Redux and TypeScript. I also have
+                  experience with other frontend tools and libraries that help
+                  enhance the functionality and design of my projects. I also
+                  enjoy working with animation libraries like Framer Motion to
+                  bring life to UI components, and I’ve explored UI libraries
+                  such as ShadCN and Material UI to speed up and polish my
+                  designs.{" "}
+                </p>
+                <p>
+                  As a native Burmese speaker with intermediate level in
+                  English, I’m able to communicate and collaborate effectively
+                  across diverse teams. I’m passionate about building clean,
+                  user-friendly, and high-performance web interfaces that are
+                  both beautiful and functional.{" "}
+                </p>
+                <p>
+                  I enjoy creating responsive layouts and optimizing
+                  performance, and I'm always excited to tackle new frontend
+                  challenges. If you’re looking for a frontend developer who
+                  values both design and code, feel free to get in touch!
+                </p>
+              </div>
+              <div>
+                <a href="#contact">
+                  <button className="bg-themeColor text-black px-4 py-1.5 rounded-lg text-[14px] lg:text-base font-medium transition duration-300 uppercase">
+                    Hire Me
+                  </button>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }

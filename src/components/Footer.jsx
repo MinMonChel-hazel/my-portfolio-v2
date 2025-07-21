@@ -16,9 +16,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="pb-10">
-        
-      <div className="border-t border-gray-700 mt-8 pt-6 text-sm text-gray-400 text-center">
+    <footer className="pb-6 bg-[#121B42]">
+      <div className="border-t border-gray-700 mt-8 pt-6 text-xs md:text-sm text-gray-400 text-center">
         <p>© {new Date().getFullYear()} Min Mon Chel. All rights reserved.</p>
         <p className="mt-2">
           Built with <span className="text-pink-400">React</span>,{" "}
@@ -41,7 +40,7 @@ export default function Footer() {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-3 rounded-full bg-gray-800 text-white shadow-lg hover:bg-pink-400"
+          className="fixed bottom-6 right-6 p-2 rounded-full bg-gray-800 text-white shadow-lg hover:bg-themeColor"
         >
           ↑
         </motion.button>
