@@ -21,7 +21,7 @@ export default function Hero() {
     <div
       data-aos="fade-left"
       data-aos-delay="300"
-      className="relative overflow-hidden flex flex-col items-center mt-4 md:mt-0 mb-4 md:mb-0"
+      className="relative overflow-hidden flex flex-col items-center mt-2 md:mt-0 mb-4 lg:mb-0"
     >
       <div className="lg:block hidden lg:h-[350px] xl:h-[450px] xl:w-[480px] lg:w-[380px] absolute bg-themeColor transform rotate-45 z-0 xl:right-12 right-0 top-36 rounded-3xl"></div>
 
@@ -87,7 +87,7 @@ export default function Hero() {
         </div>
 
         {/* Right Text Column */}
-        <div className="relative xl:mt-12 mt-8">
+        <div className="relative xl:mt-14 mt-8">
           <div
             className="xl:w-72 lg:w-64 w-60 xl:h-72 lg:h-64 h-60 rounded-full left-0"
             data-aos="fade-up"

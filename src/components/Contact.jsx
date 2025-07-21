@@ -100,7 +100,7 @@ export default function Contact() {
           <form
             action="https://getform.io/f/bjjownvb"
             method="POST"
-            className="shadow-md rounded lg:pl-20 md:pl-12 pl-0 md:pr-0 pr-6 pb-6 space-y-5 w-full"
+            className="shadow-md rounded lg:pl-20 md:pl-12 pl-0 md:pr-0 pr-6 pb-6 space-y-5 w-full md:w-3/4"
           >
             <div className="space-y-2">
               <label htmlFor="username">Name</label>
