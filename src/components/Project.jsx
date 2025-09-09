@@ -2,13 +2,11 @@ import React from "react";
 import P1Img from "../assets/Project1.png";
 import P2Img from "../assets/Project2.png";
 import P3Img from "../assets/Project3.png";
-import P4Img from "../assets/Project4.png";
-import P5Img from "../assets/Project5.png";
-import P6Img from "../assets/Project6.png";
+import P4Img from "../assets/Project4.jpg";
 
 const ProjectCard = ({ image, title, description, link }) => {
   return (
-    <article className="relative bg-[#121B42] rounded-xl overflow-hidden border border-themeColor shadow-soft xl:h-[350px] lg:h-[370px] md:h-[300px]">
+    <article className="relative bg-[#121B42] rounded-xl overflow-hidden border border-themeColor shadow-soft xl:h-[365px] lg:h-[380px] md:h-[305px]">
       <div className="relative z-10">
         <figure className="relative">
           <img
@@ -26,13 +24,13 @@ const ProjectCard = ({ image, title, description, link }) => {
             </button>
           </a>
         </figure>
-        <div className="xl:px-5 px-3 py-2 text-center">
+        <div className="xl:px-5 px-3 py-1 text-center">
           <header>
-            <h3 className="text-white font-semibold text-[14px] lg:text-[17px]">
+            <h3 className="text-white font-semibold text-[14px] lg:text-[16px]">
               {title}
             </h3>
           </header>
-          <p className="text-gray-400 text-[14px]">{description}</p>
+          <p className="text-gray-400 text-[13px]">{description}</p>
         </div>
       </div>
     </article>
@@ -42,31 +40,31 @@ const ProjectCard = ({ image, title, description, link }) => {
 let ProjectsList = [
   {
     image: P1Img,
+    title: "Movie Explorer (React + TMDB API)",
+    description:
+      "A responsive movie browsing app built with React and TMDB API. Features include searching, filtering, and category-based browsing (Now Playing, Popular, Top Rated, Upcoming).",
+    link: "https://github.com/MinMonChel-hazel/react-movie-app",
+  },
+  {
+    image: P2Img,
+    title: "Tasty Recipes (React + API)",
+    description:
+      "A recipe discovery app created with React and a public Recipes API. Users can search dishes, view ingredients, and explore cooking instructions with a modern responsive design.",
+    link: "https://github.com/MinMonChel-hazel/tasty-react-recipes",
+  },
+  {
+    image: P3Img,
     title: "Library Manager (React + Firebase)",
     description:
       "CRUD-powered library system built with React Context + Firebase, featuring real-time updates and responsive UI.",
     link: "https://github.com/MinMonChel-hazel/Library-Management-App-Firebase",
   },
   {
-    image: P2Img,
-    title: "Todo Tracker (React + localStorage)",
-    description:
-      "A clean and intuitive Todo app, using React Hooks and localStorage to persist tasks.",
-    link: "https://github.com/MinMonChel-hazel/React-Todo-App",
-  },
-  {
-    image: P3Img,
-    title: "Tailwind Sample UI (Tailwind)",
-    description:
-      "Responsive UI template built in Vue and styled with Tailwind CSS, focusing on layout and design.",
-    link: "https://github.com/MinMonChel-hazel/Tailwind-Css-Project",
-  },
-  {
     image: P4Img,
-    title: "University Web Design (HTML & CSS)",
+    title: "React Quiz App",
     description:
-      "A static university website template built with plain HTML and CSS. Focuses on structure, responsiveness, and layout design.",
-    link: "https://github.com/MinMonChel-hazel/UniversityWebDesignSample",
+      "An interactive quiz application developed with React. Supports multiple-choice questions, instant feedback, and score tracking with a clean, engaging UI.",
+    link: "https://github.com/MinMonChel-hazel/Library-Management-App-Firebase",
   },
   //   {
   //     image: P5Img,
